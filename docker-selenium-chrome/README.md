@@ -1,8 +1,6 @@
 Privalia Selenium-Chrome Image
 =============================
 
-Here we have the Stratio's Selenium-Chrome image.
-
 * Based on Ubuntu 16.04
 * Selenium Server Standalone 3.7.1-beryllium
 * Chromedriver 2.33
