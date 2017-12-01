@@ -13,14 +13,18 @@ Here we have the Stratio's Selenium-Chrome image.
 
 ## How to build it?
 
-```git clone git@gitlab.privalia.pin:som-qa/tools-qa.git```
-```cd tools-qa```
-```cd docker-selenium-chrome```
-```docker build -t docker-selenium-chrome:62 . ```
+``` bash
+$ git clone git@gitlab.privalia.pin:som-qa/tools-qa.git
+$ cd tools-qa
+$ cd docker-selenium-chrome
+$ docker build -t docker-selenium-chrome:62 . 
+```
 
 ## How to run it?
 
-```docker run --name mybrowser -e ID=mybrowser -e SELENIUM_GRID=<hub-address>:<hub-port> --dns <dns-address> docker-selenium-chrome:62```
+``` bash
+$ docker run --name mybrowser -e ID=mybrowser -e SELENIUM_GRID=<hub-address>:<hub-port> --dns <dns-address> docker-selenium-chrome:62
+```
 
 ## How to extend it?
 
@@ -37,7 +41,7 @@ Ex. "ID=privalia"
 This variable is mandatory and it is used to indicated a specific grid.
 Ex. "SELENIUM_GRID=jenkins.privalia.com:4444"
 
-
+## Connecting to the node
 You can acquire the port that the VNC server is exposed to by running:
 
 ``` bash
@@ -48,7 +52,7 @@ $ docker port <container-name|container-id> 5900
 Using RealVNC you can look in view only mode.
 
 ``` bash
-$ ./bin/vncview 127.0.0.1:49338
+$ vncviewer 127.0.0.1:49338
 ```
 
 When you are prompted for the password it is __secret__.
