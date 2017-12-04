@@ -21,7 +21,7 @@ $ docker build -t docker-selenium-chrome:62 .
 ## How to run it?
 
 ``` bash
-$ docker run --name mybrowser -e ID=mybrowser -e SELENIUM_GRID=<hub-address>:<hub-port> --dns <dns-address> docker-selenium-chrome:62
+$ docker run -d -P --name mybrowser -e ID=mybrowser -e SELENIUM_GRID=<hub-address>:<hub-port> --dns <dns-address> docker-selenium-chrome:62
 ```
 
 ## How to extend it?
