@@ -4,7 +4,7 @@ Privalia Selenium-Chrome Image
 * Based on Ubuntu 16.04
 * Selenium Server Standalone 3.7.1-beryllium
 * Chromedriver 2.33
-* Chrome version: 62.0.3202.94-1
+* Chrome version: 63.0.3239.84-1
 * OpenJDK 1.8
 * Fluxbox 1.3.5
 * x11vnc: 0.9.13
