@@ -6,21 +6,22 @@ USER root
 #============================================
 # Google Chrome
 #============================================
-# can specify versions by CHROME_VERSION;
-#  e.g. google-chrome-stable=53.0.2785.101-1
-#       google-chrome-beta=53.0.2785.92-1
-#       google-chrome-unstable=54.0.2840.14-1
-#       latest (equivalent to google-chrome-stable)
-#       google-chrome-beta  (pull latest beta)
-#============================================
-ARG CHROME_VERSION="google-chrome-stable=63.0.3239.84-1"
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
-  && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list \
-  && apt-get update -qqy \
+COPY google-chrome-stable_63.0.3239.84-1_amd64.deb /tmp/google-chrome-stable.deb
+RUN apt-get update -qqy \
   && apt-get -qqy install \
-    ${CHROME_VERSION:-google-chrome-stable} \
-  && rm /etc/apt/sources.list.d/google-chrome.list \
-  && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
+  fonts-liberation \
+  gconf-service \
+  libappindicator1 \
+  libasound2 \
+  libatk1.0-0 \
+  libcairo2 \
+  libgconf-2-4 \
+  libgdk-pixbuf2.0-0 \
+  libglib2.0-0 \
+  libxss1 \
+  lsb-release \
+  xdg-utils \
+  && dpkg -i /tmp/google-chrome-stable.deb
 
 #============================================
 # VNC and xvfb
