@@ -13,7 +13,7 @@ USER root
 #       latest (equivalent to google-chrome-stable)
 #       google-chrome-beta  (pull latest beta)
 #============================================
-ARG CHROME_VERSION="google-chrome-stable=62.0.3202.94-1"
+ARG CHROME_VERSION="google-chrome-stable=63.0.3239.84-1"
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
   && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list \
   && apt-get update -qqy \
@@ -27,6 +27,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 #============================================
 RUN apt-get update -qqy \
   && apt-get -qqy install \
+  apt-utils \
   x11vnc \
   xvfb \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
