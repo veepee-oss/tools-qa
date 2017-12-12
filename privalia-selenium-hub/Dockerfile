@@ -1,4 +1,4 @@
-FROM selenium/node-base:3.7.1-beryllium
+FROM selenium/base:3.7.1-beryllium
 LABEL authors=PrivaliaQATeam
 
 USER seluser
