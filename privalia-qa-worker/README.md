@@ -31,18 +31,21 @@ Then, you can map this new volume to the .m2 directory of the container using -v
 First, do a mvn install on the parent-pom project to load al required dependencies on the maven repo. To do this, go to the project folder (where the pom.xml file is located) and execute
 
 ``` bash
+cd .../parent-pom
 $ docker run -it --rm -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privalia-qa-worker:0.1.0 mvn clean install
 ```
 
 Do the same with the bdt-lib project: Go to the project directory and execute
 
 ``` bash
+cd .../bdt-lib
 docker run -it --rm -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privalia-qa-worker:0.1.0 mvn clean install -Dmaven.test.skip=true
 ```
 
 At this point, all required dependencies should be available in the repository, you can go to your project folder and execute your tests:
 
 ``` bash
+cd .../pilot-project
 docker run -it --rm -- SeleniumPoolingIT -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privalia-qa-worker:0.1.0 mvn verify -Dit.test=com.privalia.bo.po.SeleniumPoolingIT.java -DSELENIUM_GRID=127.0.0.1:4444 -DlogLevel=DEBUG
 ```
 
