@@ -10,7 +10,7 @@ USER seluser
 EXPOSE 4444
 
 # As integer, maps to "maxSession"
-ENV GRID_MAX_SESSION 5
+ENV GRID_MAX_SESSION 20
 # In milliseconds, maps to "newSessionWaitTimeout"
 ENV GRID_NEW_SESSION_WAIT_TIMEOUT -1
 # As a boolean, maps to "throwOnCapabilityNotPresent"
