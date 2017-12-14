@@ -46,7 +46,7 @@ At this point, all required dependencies should be available in the repository, 
 
 ``` bash
 cd .../pilot-project
-docker run -it --rm --name SeleniumPoolingIT -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privalia-qa-worker:0.1.0 mvn verify -Dit.test=com.privalia.bo.po.SeleniumPoolingIT.java -DSELENIUM_GRID=127.0.0.1:4444 -DlogLevel=DEBUG
+docker run -it --rm --name SeleniumPoolingIT --dns 172.16.214.1 --dns 172.16.214.2 -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privalia-qa-worker:0.1.0 mvn verify -Dit.test=com.privalia.bo.po.SeleniumPoolingIT.java -DSELENIUM_GRID=127.0.0.1:4444 -DlogLevel=DEBUG
 ```
 
 Change the test name or other variables (like the address of the selenium grid or the loggin level) according to your needs
