@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<servers>
-    <server>
-      <username>msgque</username>
-      <password>Ygrb3NH</password>
-      <id>central</id>
-    </server>
-    <server>
-      <username>msgque</username>
-      <password>Ygrb3NH</password>
-      <id>snapshots</id>
-    </server>
-  </servers>
-  <profiles>
-    <profile>
-      <repositories>
-        <repository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>releases</id>
-          <name>libs-release</name>
-          <url>http://artifactory-mkp.privalia.pin/artifactory/pmp-product-search-lib-snapshot</url>
-        </repository>
-        <repository>
-          <snapshots />
-          <id>snapshots</id>
-          <name>libs-snapshot</name>
-          <url>http://artifactory-mkp.privalia.pin/artifactory/pmp-product-search-lib-snapshot</url>
-        </repository>
-      </repositories>
-      <pluginRepositories>
-        <pluginRepository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>central</id>
-          <name>plugins-release</name>
-          <url>http://artifactory-mkp.privalia.pin/artifactory/plugins-release</url>
-        </pluginRepository>
-        <pluginRepository>
-          <snapshots />
-          <id>snapshots</id>
-          <name>plugins-snapshot</name>
-          <url>http://artifactory-mkp.privalia.pin/artifactory/plugins-snapshot</url>
-        </pluginRepository>
-      </pluginRepositories>
-      <id>artifactory</id>
-    </profile>
-  </profiles>
-  <activeProfiles>
-    <activeProfile>artifactory</activeProfile>
-  </activeProfiles>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd"
+          xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!--
+    This credentials are used by maven to authenticate to the remote artifactory repository
+    when executing a "mvn deploy" (so, are necessary to deploy artifacts)
+    Currently, it is the pipeline itself that upload the generated artifacts to the artifactory
+    (it does it automatically after a successful build).
+    That's why this section is commented (because is not maven the responsible for uploading the artifact)
+    However, you can uncomment this section and set directly the necessary credentials, or even better,
+    you can pass this credentials via CLI using "mvn deploy -Dusername=username -Dpassword=password"
+    -->
+
+    <!--
+    <servers>
+        <server>
+            <username>${username}</username>
+            <password>${password}</password>
+            <id>releases</id>
+        </server>
+        <server>
+            <username>${username}</username>
+            <password>${password}</password>
+            <id>snapshots</id>
+        </server>
+    </servers>
+    -->
+
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>releases</id>
+                    <name>libs-release</name>
+                    <url>http://artifactory.mkp.privalia.pin/artifactory/libs-release</url>
+                </repository>
+                <repository>
+                    <snapshots/>
+                    <id>snapshots</id>
+                    <name>libs-snapshot</name>
+                    <url>http://artifactory.mkp.privalia.pin/artifactory/libs-snapshot</url>
+                </repository>
+            </repositories>
+            <id>artifactory</id>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>artifactory</activeProfile>
+    </activeProfiles>
 </settings>
