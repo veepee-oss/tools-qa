@@ -6,6 +6,9 @@ LABEL authors=PrivaliaQATeam
 #============================================
 RUN apk add --no-cache curl tar bash vim iputils openssh-client
 
+RUN adduser -D -u 994 jenkins
+USER jenkins
+
 ARG MAVEN_VERSION=3.5.2
 ARG USER_HOME_DIR="/root"
 ARG SHA=707b1f6e390a65bde4af4cdaf2a24d45fc19a6ded00fff02e91626e3e42ceaff
