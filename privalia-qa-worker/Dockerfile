@@ -7,10 +7,9 @@ LABEL authors=PrivaliaQATeam
 RUN apk add --no-cache curl tar bash vim iputils openssh-client
 
 RUN adduser -D -u 994 jenkins
-USER jenkins
 
 ARG MAVEN_VERSION=3.5.2
-ARG USER_HOME_DIR="/root"
+ARG USER_HOME_DIR="/home/jenkins"
 ARG SHA=707b1f6e390a65bde4af4cdaf2a24d45fc19a6ded00fff02e91626e3e42ceaff
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
 
@@ -24,12 +23,13 @@ RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
 ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 
+USER jenkins
+RUN mkdir $USER_HOME_DIR/.m2
 COPY mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh
 COPY run.sh /opt/bin/run.sh
 COPY settings-docker.xml /usr/share/maven/ref/
 COPY settings.xml $USER_HOME_DIR/.m2/settings.xml
 
-VOLUME "$USER_HOME_DIR/.m2"
 
 ENTRYPOINT ["/opt/bin/run.sh"]
 CMD ["mvn"]
