@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration | Demoqa</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://localhost/xmlrpc.php">
+
+        <script type="text/javascript">
+			var piereg_pass_str_meter_string = new Array(
+														 'Strength Indicator',
+														 'Very weak',
+														 'Weak',
+														 'Medium',
+														 'Strong',
+														 'Mismatch'
+														 );
+			var piereg_validation_engn = new Array(
+												 'none',
+												 '* This field is required',
+												 '* Please select an option',
+												 '* This checkbox is required',
+												 '* Both date range fields are required',
+												 '* Field must equal test',
+												 '* Invalid ',
+												 'Date Range',
+												 'Date Time Range',
+												 '* Minimum ',
+												 ' characters required',
+												 '* Maximum ',
+												 ' characters allowed',
+												 '* You must fill one of the following fields',
+												 '* Minimum value is ',
+												 '* Date prior to ',
+												 '* Date past ',
+												 ' options allowed',
+												 '* Please select ',
+												 ' options',
+												 '* Fields do not match',
+												 '* Invalid credit card number',
+												 '* Invalid phone number',
+												 '* Allowed Format (xxx) xxx-xxxx',
+												 '* Minimum 10 Digits starting with Country Code',
+												 '* Invalid email address',
+												 '* Not a valid integer',
+												 '* Invalid number',
+												 '* Invalid month',
+												 '* Invalid day',
+												 '* Invalid year',
+												 '* Invalid file extension',
+												 '* Invalid date, must be in YYYY-MM-DD format',
+												 '* Invalid IP address',
+												 '* Invalid URL',
+												 '* Numbers only',
+												 '* Letters only',
+												 '* No special characters allowed',
+												 '* This user is already taken',
+												 '* Validating, please wait',
+												 '* This username is available',
+												 '* This user is already taken',
+												 '* Validating, please wait',
+												 '* This name is already taken',
+												 '* This name is available',
+												 '* Validating, please wait',
+												 '* This name is already taken',
+												 '* Please input HELLO',
+												 '* Invalid Date',
+												 '* Invalid Date or Date Format',
+												 'Expected Format: ',
+												 'mm/dd/yyyy hh:mm:ss AM|PM or ',
+												 'yyyy-mm-dd hh:mm:ss AM|PM',
+												 '* Invalid Username',
+												 '* Invalid File',
+												 '* Maximum value is '
+												 );
+		</script>
+        		<script type="text/javascript">
+			var piereg_current_date		= '2018';
+			var piereg_startingDate		= '1950';
+			var piereg_endingDate		= '2014';
+        </script>
+        <link rel='dns-prefetch' href='http://ajax.googleapis.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Demoqa &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Demoqa &raquo; Comments Feed" href="comments/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.11"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles.css@ver=4.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-standard-css-css'  href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css?ver=4.6.11' type='text/css' media='all' />
+<link rel='stylesheet' id='pie_front_css-css'  href='wp-content/plugins/pie-register/css/front.css@ver=2.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pie_validation_css-css'  href='wp-content/plugins/pie-register/css/validation.css@ver=2.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-fonts-css'  href='http://fonts.googleapis.com/css?family=Oswald%7CRoboto%3A400%2C400italic%2C700%2C700italic&amp;ver=1.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-style-css'  href='wp-content/themes/wp-knowledge-base/style.css@ver=1.6.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-bootstrap-css'  href='wp-content/themes/wp-knowledge-base/lib/bootstrap/css/bootstrap.min.css@ver=1.6.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-bootstrap-theme-css'  href='wp-content/themes/wp-knowledge-base/lib/bootstrap/css/bootstrap-theme.min.css@ver=1.6.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-icomoon-css'  href='wp-content/themes/wp-knowledge-base/lib/icomoon/style.css@ver=1.6.0.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js@ver=1.12.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js@ver=1.4.1'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='wp-content/plugins/pie-register/js/piereg_validation.js@ver=2.0'></script>
+<script type='text/javascript' src='wp-content/plugins/pie-register/js/CalendarControl.js@ver=2.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _zxcvbnSettings = {"src":"http:\/\/localhost\/wp-includes\/js\/zxcvbn.min.js"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-includes/js/zxcvbn-async.min.js@ver=1.0'></script>
+<script type='text/javascript' src='wp-content/plugins/pie-register/js/datepicker.js@ver=2.0'></script>
+<script type='text/javascript' src='wp-content/themes/wp-knowledge-base/lib/bootstrap/js/bootstrap.min.js@ver=1.6.0'></script>
+<script type='text/javascript' src='wp-content/themes/wp-knowledge-base/lib/bootstrap/js/jquery.ipt-kb-bootstrap.js@ver=1.6.0'></script>
+<script type='text/javascript' src='wp-content/themes/wp-knowledge-base/lib/sticky-kit/jquery.sticky-kit.min.js@ver=1.6.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var iptKBJS = {"ajaxurl":"http:\/\/localhost\/wp-admin\/admin-ajax.php","ajax_error":"Oops, some problem to connect. Try again?"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/wp-knowledge-base/js/ipt-kb.js@ver=1.6.0'></script>
+<link rel='https://api.w.org/' href='wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.11" />
+<link rel="canonical" href="index.html@p=49.html" />
+<link rel='shortlink' href='index.html@p=49.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed@url=http%253A%252F%252Flocalhost%252Fregistration%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed@url=http%253A%252F%252Flocalhost%252Fregistration%252F&amp;format=xml" />
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+
+ var $start_counter = $( "#event-start" ),
+$drag_counter = $( "#event-drag" ),
+$stop_counter = $( "#event-stop" ),
+counts = [ 0, 0, 0 ];
+$( "#dragevent" ).draggable({
+start: function() {
+counts[ 0 ]++;
+updateCounterStatus( $start_counter, counts[ 0 ] );
+},
+drag: function() {
+counts[ 1 ]++;
+updateCounterStatus( $drag_counter, counts[ 1 ] );
+},
+stop: function() {
+counts[ 2 ]++;
+updateCounterStatus( $stop_counter, counts[ 2 ] );
+}
+});
+function updateCounterStatus( $event_counter, new_count ) {
+// first update the status visually...
+if ( !$event_counter.hasClass( "ui-state-hover" ) ) {
+$event_counter.addClass( "ui-state-hover" )
+.siblings().removeClass( "ui-state-hover" );
+}
+// ...then update the numbers
+$( "span.count", $event_counter ).text( new_count );
+}
+
+
+var availableTags = [
+"ActionScript",
+"AppleScript",
+"Asp",
+"BASIC",
+"C",
+"C++",
+"Clojure",
+"COBOL",
+"ColdFusion",
+"Erlang",
+"Fortran",
+"Groovy",
+"Haskell",
+"Java",
+"JavaScript",
+"Lisp",
+"Perl",
+"PHP",
+"Python",
+"Ruby",
+"Scala",
+"Scheme"
+];
+$( "#tagss" ).autocomplete({
+source: availableTags
+});
+
+ function split( val ) {
+return val.split( /,\s*/ );
+}
+function extractLast( term ) {
+return split( term ).pop();
+}
+$( "#tagsss" )
+// don't navigate away from the field on tab when selecting an item
+.bind( "keydown", function( event ) {
+if ( event.keyCode === $.ui.keyCode.TAB &&
+$( this ).autocomplete( "instance" ).menu.active ) {
+event.preventDefault();
+}
+})
+.autocomplete({
+minLength: 0,
+source: function( request, response ) {
+// delegate back to autocomplete, but extract the last term
+response( $.ui.autocomplete.filter(
+availableTags, extractLast( request.term ) ) );
+},
+focus: function() {
+// prevent value inserted on focus
+return false;
+},
+select: function( event, ui ) {
+var terms = split( this.value );
+// remove the current input
+terms.pop();
+// add the selected item
+terms.push( ui.item.value );
+// add placeholder to get the comma-and-space at the end
+terms.push( "" );
+this.value = terms.join( ", " );
+return false;
+}
+});
+
+ $.widget( "custom.catcomplete", $.ui.autocomplete, {
+_create: function() {
+this._super();
+this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
+},
+_renderMenu: function( ul, items ) {
+var that = this,
+currentCategory = "";
+$.each( items, function( index, item ) {
+var li;
+if ( item.category != currentCategory ) {
+ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+currentCategory = item.category;
+}
+li = that._renderItemData( ul, item );
+if ( item.category ) {
+li.attr( "aria-label", item.category + " : " + item.label );
+}
+});
+}
+});
+
+ var data = [
+{ label: "anders", category: "" },
+{ label: "andreas", category: "" },
+{ label: "antal", category: "" },
+{ label: "annhhx10", category: "Products" },
+{ label: "annk K12", category: "Products" },
+{ label: "annttop C13", category: "Products" },
+{ label: "anders andersson", category: "People" },
+{ label: "andreas andersson", category: "People" },
+{ label: "andreas johnson", category: "People" }
+];
+$( "#searcha" ).catcomplete({
+delay: 0,
+source: data
+});
+
+ $( "#datepicker1" ).datepicker();
+
+ $( "#datepicker2" ).datepicker();
+$( "#anim" ).change(function() {
+$( "#datepicker2" ).datepicker( "option", "showAnim", $( this ).val() );
+});
+
+ $( "#datepicker3" ).datepicker({
+changeMonth: true,
+changeYear: true
+});
+
+ $( "#datepicker4" ).datepicker();
+$( "#format" ).change(function() {
+$( "#datepicker4" ).datepicker( "option", "dateFormat", $( this ).val() );
+});
+
+ $( "#slider-range-max" ).slider({
+range: "max",
+min: 1,
+max: 10,
+value: 2,
+slide: function( event, ui ) {
+$( "#amount1" ).val( ui.value );
+}
+});
+$( "#amount1" ).val( $( "#slider-range-max" ).slider( "value" ) );
+
+$( document ).tooltip();
+
+$( "#draggable" ).draggable();
+ $( "#tabs" ).tabs();
+ $( "#sliderview" ).slider();
+$( "#tabs222" ).tabs();
+$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+
+$( "#menu" ).menu();
+
+$( "#draggable1" ).draggable({ scroll: true });
+$( "#draggable2" ).draggable({ scroll: true, scrollSensitivity: 100 });
+$( "#draggable3" ).draggable({ scroll: true, scrollSpeed: 100 });
+
+$( "#draggabl" ).draggable({ axis: "y" });
+$( "#draggabl2" ).draggable({ axis: "x" });
+$( "#draggabl3" ).draggable({ containment: "#containment-wrapper", scroll: false });
+$( "#draggabl5" ).draggable({ containment: "parent" });
+
+$( "#drag" ).draggable({ cursor: "move", cursorAt: { top: 56, left: 56 } });
+$( "#drag2" ).draggable({ cursor: "crosshair", cursorAt: { top: -5, left: -5 } });
+$( "#drag3" ).draggable({ cursorAt: { bottom: 0 } });
+
+$( "#sortablebox" ).sortable({
+revert: true
+});
+
+$( "#draggablebox" ).draggable({
+connectToSortable: "#sortablebox",
+helper: "clone",
+revert: "invalid"
+});
+
+
+
+$( "#draggableview" ).draggable();
+$( "#droppableview" ).droppable({
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "p" )
+.html( "Dropped!" );
+}
+});
+
+$( "#draggableaccept, #draggable-nonvalid" ).draggable();
+$( "#droppableaccept" ).droppable({
+accept: "#draggableaccept",
+activeClass: "ui-state-hover",
+hoverClass: "ui-state-active",
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "p" )
+.html( "Dropped!" );
+}
+});
+
+$( "#draggableprop" ).draggable();
+$( "#droppableprop, #droppable-inner" ).droppable({
+activeClass: "ui-state-hover",
+hoverClass: "ui-state-active",
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "> p" )
+.html( "Dropped!" );
+return false;
+}
+});
+$( "#droppableprop2, #droppable2-inner" ).droppable({
+greedy: true,
+activeClass: "ui-state-hover",
+hoverClass: "ui-state-active",
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "> p" )
+.html( "Dropped!" );
+}
+});
+
+$( "#draggablerevert" ).draggable({ revert: "valid" });
+$( "#draggablerevert2" ).draggable({ revert: "invalid" });
+$( "#droppablerevert" ).droppable({
+activeClass: "ui-state-default",
+hoverClass: "ui-state-hover",
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "p" )
+.html( "Dropped!" );
+}
+});
+
+$( "#catalog" ).accordion();
+$( "#catalog li" ).draggable({
+appendTo: "body",
+helper: "clone"
+});
+$( "#cart ol" ).droppable({
+activeClass: "ui-state-default",
+hoverClass: "ui-state-hover",
+accept: ":not(.ui-sortable-helper)",
+drop: function( event, ui ) {
+$( this ).find( ".placeholder" ).remove();
+$( "<li></li>" ).text( ui.draggable.text() ).appendTo( this );
+}
+}).sortable({
+items: "li:not(.placeholder)",
+sort: function() {
+// gets added unintentionally by droppable interacting with sortable
+// using connectWithSortable fixes this, but doesn't allow you to customize active/hoverClass options
+$( this ).removeClass( "ui-state-default" );
+}
+});
+
+$( "#resizable" ).resizable();
+
+$( "#resizableani" ).resizable({
+animate: true
+});
+
+ $( "#resizableconstrain" ).resizable({
+containment: "#container1"
+});
+
+ $( "#resizable_helper" ).resizable({
+helper: "ui-resizable-helper"
+});
+
+ $( "#resizable_max_min" ).resizable({
+maxHeight: 250,
+maxWidth: 350,
+minHeight: 150,
+minWidth: 200
+});
+
+ $( "#selectable" ).selectable();
+
+$( "#selectable_grid" ).selectable();
+
+
+ $( "#selectable-serialize" ).selectable({
+stop: function() {
+var result = $( "#select-result" ).empty();
+$( ".ui-selected", this ).each(function() {
+var index = $( "#selectable-serialize li" ).index( this );
+result.append( "#" + ( index + 1 ) );
+});
+}
+});
+
+ $( "#sortable" ).sortable();
+$( "#sortable" ).disableSelection();
+
+
+ $( "#sortable1, #sortable2" ).sortable({
+connectWith: ".connectedSortable"
+}).disableSelection();
+
+ $( "#sortable_grid" ).sortable();
+$( "#sortable_grid" ).disableSelection();
+
+ $( ".column" ).sortable({
+connectWith: ".column",
+handle: ".portlet-header",
+cancel: ".portlet-toggle",
+placeholder: "portlet-placeholder ui-corner-all"
+});
+$( ".portlet" )
+.addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
+.find( ".portlet-header" )
+.addClass( "ui-widget-header ui-corner-all" )
+.prepend( "<span class='ui-icon ui-icon-minusthick portlet-toggle'></span>");
+$( ".portlet-toggle" ).click(function() {
+var icon = $( this );
+icon.toggleClass( "ui-icon-minusthick ui-icon-plusthick" );
+icon.closest( ".portlet" ).find( ".portlet-content" ).toggle();
+});
+
+$( "#accordion" ).accordion();
+
+ var icons = {
+header: "ui-icon-circle-arrow-e",
+activeHeader: "ui-icon-circle-arrow-s"
+};
+$( "#accordion_icons" ).accordion({
+icons: icons
+});
+$( "#toggle" ).button().click(function() {
+if ( $( "#accordion_icons" ).accordion( "option", "icons" ) ) {
+$( "#accordion_icons" ).accordion( "option", "icons", null );
+} else {
+$( "#accordion_icons" ).accordion( "option", "icons", icons );
+}
+});
+
+ $( "#accordion_fill" ).accordion({
+heightStyle: "fill"
+});
+});
+
+
+ $( "#accordion-sort" )
+.ui-accordion({
+header: "> div > h3"
+})
+.sortable({
+axis: "y",
+handle: "h3",
+stop: function( event, ui ) {
+ui.item.children( "h3" ).triggerHandler( "focusout" );
+$( this ).ui-accordion( "refresh" );
+}
+});
+
+ $(function() {
+$( "#accordion-resizer" ).resizable({
+minHeight: 140,
+minWidth: 200,
+resize: function() {
+$( "#accordion_fill" ).accordion( "refresh" );
+}
+});
+
+ 
+});
+</script>
+		<script type="text/javascript">
+			var ajaxurl 				= 'http://localhost/wp-admin/admin-ajax.php';
+        </script>
+        <script>
+  $(document).ready(function() {
+      $( "#accordionsort" )
+.accordion({
+header: "> div > h3"
+})
+.sortable({
+axis: "y",
+handle: "h3",
+stop: function( event, ui ) {
+
+ui.item.children( "h3" ).triggerHandler( "focusout" );
+
+$( this ).accordion( "refresh" );
+}
+});    
+});
+
+</script>
+</head>
+
+<body class="page page-id-49 page-template-default">
+<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+		<nav class="navbar navbar-default navbar-static-top main-navigation" role="navigation" id="site_navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+										<a class="site-anchor" href="index.html">
+						<img src="wp-content/uploads/2014/08/Tools-QA-213.png" width="275" height="100" alt="">
+					</a>
+					
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul id="menu-primary-menu" class="nav navbar-nav"><li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a title="Home" href="index.html">Home</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a title="About us" href="index.html@p=156.html">About us</a></li>
+<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a title="Services" href="index.html@p=114.html">Services</a></li>
+<li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66 dropdown"><a title="Demo" href="index.html@p=49.html#" data-toggle="dropdown" class="dropdown-toggle">Demo <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a title="Draggable" href="index.html@p=22.html">Draggable</a></li>
+	<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a title="Tabs" href="index.html@p=82.html">Tabs</a></li>
+</ul>
+</li>
+<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a title="Blog" href="blog/index.html">Blog</a></li>
+<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a title="Contact" href="index.html@p=28.html">Contact</a></li>
+</ul>				</div>
+			</div>
+		</nav>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109033876-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109033876-1');
+</script>
+
+
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content container">
+
+	<ol id="breadcrumbs" class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
+		<li typeof="v:Breadcrumb">
+		<a rel="v:url" property="v:title" href="index.html">Home</a>
+	</li>
+	
+							<li typeof="v:Breadcrumb" class="active">
+			<span property="v:title">Registration</span>
+		</li>
+		</ol>
+
+	<div id="primary" class="content-area col-md-8">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-49" class="post-49 page type-page status-publish hentry">
+	<header class="entry-header page-header">
+		<h1 class="entry-title">Registration</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="pieregformWrapper pieregWrapper"><style type="text/css">
+.field_note{font-size:12px; color:#FF0000;}
+.required{color:#FF0000}
+</style><div id="show_pie_register_error_js" class="piereg_entry-content"></div><div class="fieldset "><h2 id="piereg_pie_form_heading">Registration Form</h2><p id="piereg_pie_form_desc" ></p></div><div id="pie_register_reg_form"><form enctype="multipart/form-data" id="pie_regiser_form" method="post" action="index.html@p=49.html"><ul id="pie_register"><li class="fields pageFields_1 "><div class="fieldset"><label>First Name</label><input value="" id="name_3_firstname" name="first_name" class="input_fields  piereg_validate[required] input_fields"   type="text"  /><div class="fieldset_child"><label>Last Name</label><input value="" id="name_3_lastname" name="last_name" class="input_fields  piereg_validate[required] input_fields"   type="text"  /></div></div><div></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="radio_4">Marital Status</label><div class="radio_wrap"><label>Single</label><input  value="single" type="radio"  name="radio_4[]" class="input_fields  radio_fields"  data-map-field-by-class="radio_4" ><label>Married</label><input  value="married" type="radio"  name="radio_4[]" class="input_fields  radio_fields"  data-map-field-by-class="radio_4" ><label>Divorced</label><input  value="divorced" type="radio"  name="radio_4[]" class="input_fields  radio_fields"  data-map-field-by-class="radio_4" ></div></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="checkbox_5">Hobby</label><div class="radio_wrap"><label>Dance</label><input  value="dance" type="checkbox"  name="checkbox_5[]" class="input_fields  piereg_validate[required] radio_fields"  data-map-field-by-class="checkbox_5" ><label>Reading</label><input  value="reading" type="checkbox"  name="checkbox_5[]" class="input_fields  piereg_validate[required] radio_fields"  data-map-field-by-class="checkbox_5" ><label>Cricket </label><input  value="cricket " type="checkbox"  name="checkbox_5[]" class="input_fields  piereg_validate[required] radio_fields"  data-map-field-by-class="checkbox_5" ></div></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="dropdown_7">Country</label><select  id="dropdown_7" name="dropdown_7" class="  piereg_validate[required]"   ><option  value="Afghanistan">Afghanistan</option><option  value="Albania">Albania</option><option  value="Algeria">Algeria</option><option  value="American Samoa">American Samoa</option><option  value="Andorra">Andorra</option><option  value="Angola">Angola</option><option  value="Antigua and Barbuda">Antigua and Barbuda</option><option  value="Argentina">Argentina</option><option  value="Armenia">Armenia</option><option  value="Australia">Australia</option><option  value="Austria">Austria</option><option  value="Azerbaijan">Azerbaijan</option><option  value="Bahamas">Bahamas</option><option  value="Bahrain">Bahrain</option><option  value="Bangladesh">Bangladesh</option><option  value="Barbados">Barbados</option><option  value="Belarus">Belarus</option><option  value="Belgium">Belgium</option><option  value="Belize">Belize</option><option  value="Benin">Benin</option><option  value="Bermuda">Bermuda</option><option  value="Bhutan">Bhutan</option><option  value="Bolivia">Bolivia</option><option  value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option  value="Botswana">Botswana</option><option  value="Brazil">Brazil</option><option  value="Brunei">Brunei</option><option  value="Bulgaria">Bulgaria</option><option  value="Burkina Faso">Burkina Faso</option><option  value="Burundi">Burundi</option><option  value="Cambodia">Cambodia</option><option  value="Cameroon">Cameroon</option><option  value="Canada">Canada</option><option  value="Cape Verde">Cape Verde</option><option  value="Central African Republic">Central African Republic</option><option  value="Chad">Chad</option><option  value="Chile">Chile</option><option  value="China">China</option><option  value="Colombia">Colombia</option><option  value="Comoros">Comoros</option><option  value="Congo">Congo</option><option  value="Costa Rica">Costa Rica</option><option  value="Côte d'Ivoire">Côte d'Ivoire</option><option  value="Croatia">Croatia</option><option  value="Cuba">Cuba</option><option  value="Cyprus">Cyprus</option><option  value="Czech Republic">Czech Republic</option><option  value="Denmark">Denmark</option><option  value="Djibouti">Djibouti</option><option  value="Dominica">Dominica</option><option  value="Dominican Republic">Dominican Republic</option><option  value="East Timor">East Timor</option><option  value="Ecuador">Ecuador</option><option  value="Egypt">Egypt</option><option  value="El Salvador">El Salvador</option><option  value="Equatorial Guinea">Equatorial Guinea</option><option  value="Eritrea">Eritrea</option><option  value="Estonia">Estonia</option><option  value="Ethiopia">Ethiopia</option><option  value="Fiji">Fiji</option><option  value="Finland">Finland</option><option  value="France">France</option><option  value="Gabon">Gabon</option><option  value="Gambia">Gambia</option><option  value="Georgia">Georgia</option><option  value="Germany">Germany</option><option  value="Ghana">Ghana</option><option  value="Greece">Greece</option><option  value="Greenland">Greenland</option><option  value="Grenada">Grenada</option><option  value="Guam">Guam</option><option  value="Guatemala">Guatemala</option><option  value="Guinea">Guinea</option><option  value="Guinea-Bissau">Guinea-Bissau</option><option  value="Guyana">Guyana</option><option  value="Haiti">Haiti</option><option  value="Honduras">Honduras</option><option  value="Hong Kong">Hong Kong</option><option  value="Hungary">Hungary</option><option  value="Iceland">Iceland</option><option  value="India">India</option><option  value="Indonesia">Indonesia</option><option  value="Iran">Iran</option><option  value="Iraq">Iraq</option><option  value="Ireland">Ireland</option><option  value="Israel">Israel</option><option  value="Italy">Italy</option><option  value="Jamaica">Jamaica</option><option  value="Japan">Japan</option><option  value="Jordan">Jordan</option><option  value="Kazakhstan">Kazakhstan</option><option  value="Kenya">Kenya</option><option  value="Kiribati">Kiribati</option><option  value="North Korea">North Korea</option><option  value="South Korea">South Korea</option><option  value="Kuwait">Kuwait</option><option  value="Kyrgyzstan">Kyrgyzstan</option><option  value="Laos">Laos</option><option  value="Latvia">Latvia</option><option  value="Lebanon">Lebanon</option><option  value="Lesotho">Lesotho</option><option  value="Liberia">Liberia</option><option  value="Libya">Libya</option><option  value="Liechtenstein">Liechtenstein</option><option  value="Lithuania">Lithuania</option><option  value="Luxembourg">Luxembourg</option><option  value="Macedonia">Macedonia</option><option  value="Madagascar">Madagascar</option><option  value="Malawi">Malawi</option><option  value="Malaysia">Malaysia</option><option  value="Maldives">Maldives</option><option  value="Mali">Mali</option><option  value="Malta">Malta</option><option  value="Marshall Islands">Marshall Islands</option><option  value="Mauritania">Mauritania</option><option  value="Mauritius">Mauritius</option><option  value="Mexico">Mexico</option><option  value="Micronesia">Micronesia</option><option  value="Moldova">Moldova</option><option  value="Monaco">Monaco</option><option  value="Mongolia">Mongolia</option><option  value="Montenegro">Montenegro</option><option  value="Morocco">Morocco</option><option  value="Mozambique">Mozambique</option><option  value="Myanmar">Myanmar</option><option  value="Namibia">Namibia</option><option  value="Nauru">Nauru</option><option  value="Nepal">Nepal</option><option  value="Netherlands">Netherlands</option><option  value="New Zealand">New Zealand</option><option  value="Nicaragua">Nicaragua</option><option  value="Niger">Niger</option><option  value="Nigeria">Nigeria</option><option  value="Norway">Norway</option><option  value="Northern Mariana Islands">Northern Mariana Islands</option><option  value="Oman">Oman</option><option  value="Pakistan">Pakistan</option><option  value="Palau">Palau</option><option  value="Palestine">Palestine</option><option  value="Panama">Panama</option><option  value="Papua New Guinea">Papua New Guinea</option><option  value="Paraguay">Paraguay</option><option  value="Peru">Peru</option><option  value="Philippines">Philippines</option><option  value="Poland">Poland</option><option  value="Portugal">Portugal</option><option  value="Puerto Rico">Puerto Rico</option><option  value="Qatar">Qatar</option><option  value="Romania">Romania</option><option  value="Russia">Russia</option><option  value="Rwanda">Rwanda</option><option  value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option  value="Saint Lucia">Saint Lucia</option><option  value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option  value="Samoa">Samoa</option><option  value="San Marino">San Marino</option><option  value="Sao Tome and Principe">Sao Tome and Principe</option><option  value="Saudi Arabia">Saudi Arabia</option><option  value="Senegal">Senegal</option><option  value="Serbia and Montenegro">Serbia and Montenegro</option><option  value="Seychelles">Seychelles</option><option  value="Sierra Leone">Sierra Leone</option><option  value="Singapore">Singapore</option><option  value="Slovakia">Slovakia</option><option  value="Slovenia">Slovenia</option><option  value="Solomon Islands">Solomon Islands</option><option  value="Somalia">Somalia</option><option  value="South Africa">South Africa</option><option  value="Spain">Spain</option><option  value="Sri Lanka">Sri Lanka</option><option  value="Sudan">Sudan</option><option  value="Sudan, South">Sudan, South</option><option  value="Suriname">Suriname</option><option  value="Swaziland">Swaziland</option><option  value="Sweden">Sweden</option><option  value="Switzerland">Switzerland</option><option  value="Syria">Syria</option><option  value="Taiwan">Taiwan</option><option  value="Tajikistan">Tajikistan</option><option  value="Tanzania">Tanzania</option><option  value="Thailand">Thailand</option><option  value="Togo">Togo</option><option  value="Tonga">Tonga</option><option  value="Trinidad and Tobago">Trinidad and Tobago</option><option  value="Tunisia">Tunisia</option><option  value="Turkey">Turkey</option><option  value="Turkmenistan">Turkmenistan</option><option  value="Tuvalu">Tuvalu</option><option  value="Uganda">Uganda</option><option  value="Ukraine">Ukraine</option><option  value="United Arab Emirates">United Arab Emirates</option><option  value="United Kingdom">United Kingdom</option><option  value="United States">United States</option><option  value="Uruguay">Uruguay</option><option  value="Uzbekistan">Uzbekistan</option><option  value="Vanuatu">Vanuatu</option><option  value="Vatican City">Vatican City</option><option  value="Venezuela">Venezuela</option><option  value="Vietnam">Vietnam</option><option  value="Virgin Islands, British">Virgin Islands, British</option><option  value="Virgin Islands, U.S.">Virgin Islands, U.S.</option><option  value="Yemen">Yemen</option><option  value="Zambia">Zambia</option><option  value="Zimbabwe">Zimbabwe</option></select></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="date_8">Date of Birth</label><div class="piereg_time date_format_field">
+				  <div class="time_fields">
+					<select id="mm_date_8" name="date_8[date][mm]" class="  piereg_validate[required]">
+					  <option value="">Month</option><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option>
+					</select>
+				  </div>
+				  <div class="time_fields">
+					<select id="dd_date_8" name="date_8[date][dd]" class="  piereg_validate[required]">
+					  <option value="">Day</option><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option><option value="30" >30</option><option value="31" >31</option>
+					</select>
+				  </div>
+				  <div class="time_fields">
+					<select id="yy_date_8" name="date_8[date][yy]" class="  piereg_validate[required] piereg_select_year">
+					  <option value="" data-empty-vlue="true">Year</option><option value="2014" >2014</option><option value="2013" >2013</option><option value="2012" >2012</option><option value="2011" >2011</option><option value="2010" >2010</option><option value="2009" >2009</option><option value="2008" >2008</option><option value="2007" >2007</option><option value="2006" >2006</option><option value="2005" >2005</option><option value="2004" >2004</option><option value="2003" >2003</option><option value="2002" >2002</option><option value="2001" >2001</option><option value="2000" >2000</option><option value="1999" >1999</option><option value="1998" >1998</option><option value="1997" >1997</option><option value="1996" >1996</option><option value="1995" >1995</option><option value="1994" >1994</option><option value="1993" >1993</option><option value="1992" >1992</option><option value="1991" >1991</option><option value="1990" >1990</option><option value="1989" >1989</option><option value="1988" >1988</option><option value="1987" >1987</option><option value="1986" >1986</option><option value="1985" >1985</option><option value="1984" >1984</option><option value="1983" >1983</option><option value="1982" >1982</option><option value="1981" >1981</option><option value="1980" >1980</option><option value="1979" >1979</option><option value="1978" >1978</option><option value="1977" >1977</option><option value="1976" >1976</option><option value="1975" >1975</option><option value="1974" >1974</option><option value="1973" >1973</option><option value="1972" >1972</option><option value="1971" >1971</option><option value="1970" >1970</option><option value="1969" >1969</option><option value="1968" >1968</option><option value="1967" >1967</option><option value="1966" >1966</option><option value="1965" >1965</option><option value="1964" >1964</option><option value="1963" >1963</option><option value="1962" >1962</option><option value="1961" >1961</option><option value="1960" >1960</option><option value="1959" >1959</option><option value="1958" >1958</option><option value="1957" >1957</option><option value="1956" >1956</option><option value="1955" >1955</option><option value="1954" >1954</option><option value="1953" >1953</option><option value="1952" >1952</option><option value="1951" >1951</option><option value="1950" >1950</option>
+					</select>
+				  </div>
+				</div></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="phone_9">Phone Number</label><input id="phone_9" class="input_fields  piereg_validate[required,custom[phone_international]]"   name="phone_9"  placeholder="" type="text" value="" /></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="username_0">Username</label><input id="username" name="username" class="input_fields piereg_validate[required,username]" placeholder="" type="text" value="" data-errormessage-value-missing=""  /></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="email_1">E-mail</label><input id="email_1" name="e_mail" class="input_fields  piereg_validate[required,custom[email]]"  data-errormessage-custom-error=""  placeholder="" type="text" value="" /></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="profile_pic_10">Your Profile Picture</label><input id="profile_pic_10" name="profile_pic_10" class="input_fields  piereg_validate[funcCall[checkExtensions],ext[gif|jpeg|jpg|png|bmp]]"   type="file"  /></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="default_6">About Yourself</label><textarea name="description" id="description" rows="5" cols="80"></textarea></div></li><li class="fields pageFields_1 "><div class="fieldset"><label class="" for="password_2">Password</label><input id="password_2" name="password" class="input_fields  piereg_validate[minSize[8],required]" placeholder="" type="password" data-errormessage-value-missing="" data-errormessage-range-underflow="" data-errormessage-range-overflow="" /></div></li><li class="fields pageFields_1 "><div class="fieldset"><label>Confirm Password</label><input id="confirm_password_password_2" type="password" data-errormessage-value-missing="" data-errormessage-range-underflow="" data-errormessage-range-overflow="" class="input_fields  piereg_validate[required,equals[password_2]]" placeholder="" /></div></li><li class="fields pageFields_1"><div id="password_meter" class="fieldset" ><label style="visibility:hidden;">Password not entered</label><div id="piereg_passwordStrength" class="piereg_pass" >Strength Indicator</div></div></li><li class="fields pageFields_1 "><div class="fieldset piereg_submit_button"><input name="pie_submit" type="submit" value="Submit" /></div></li></ul>	</form></div></div>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+	<div id="secondary" class="widget-area col-md-4" role="complementary">
+						<aside id="nav_menu-6" class="widget widget_nav_menu panel panel-default"><div class="panel-heading"><h3 class="widget-title panel-title">Registration</h3></div><div class="panel-body"><div class="menu-registration-container"><ul id="menu-registration" class="menu"><li id="menu-item-374" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-49 current_page_item menu-item-374"><a href="index.html@p=49.html">Registration</a></li>
+</ul></div></div></aside><aside id="nav_menu-3" class="widget widget_nav_menu panel panel-default"><div class="panel-heading"><h3 class="widget-title panel-title">interaction</h3></div><div class="panel-body"><div class="menu-interactions-container"><ul id="menu-interactions" class="menu"><li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="index.html@p=22.html">Draggable</a></li>
+<li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"><a href="index.html@p=19.html">Droppable</a></li>
+<li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"><a href="index.html@p=80.html">Resizable</a></li>
+<li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"><a href="index.html@p=41.html">Selectable</a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a href="index.html@p=149.html">Sortable</a></li>
+</ul></div></div></aside><aside id="nav_menu-2" class="widget widget_nav_menu panel panel-default"><div class="panel-heading"><h3 class="widget-title panel-title">Widget</h3></div><div class="panel-body"><div class="menu-widget-container"><ul id="menu-widget" class="menu"><li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="index.html@p=40.html">Accordion</a></li>
+<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="index.html@p=36.html">Autocomplete</a></li>
+<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="index.html@p=24.html">Datepicker</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="index.html@p=43.html">Menu</a></li>
+<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="index.html@p=76.html">Slider</a></li>
+<li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="index.html@p=82.html">Tabs</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="index.html@p=84.html">Tooltip</a></li>
+</ul></div></div></aside><aside id="nav_menu-4" class="widget widget_nav_menu panel panel-default"><div class="panel-heading"><h3 class="widget-title panel-title">Frames and Windows</h3></div><div class="panel-body"><div class="menu-frames-and-windows-container"><ul id="menu-frames-and-windows" class="menu"><li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="index.html@p=11.html">Frames and windows</a></li>
+</ul></div></div></aside>			</div><!-- #secondary -->
+
+	</div><!-- #content -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8" id="footer-widget-1">
+				<aside id="text-2" class="widget widget_text"><h3 class="widget-title">About Us</h3>			<div class="textwidget">Selenium is a software testing framework for the web that facilitates the automation of browsers. The Selenium project produces various tools for automation testing such as Selenium IDE, Selenium Remote Control (RC), Selenium Grid and Selenium 2.0 & WebDriver. Learning all the tools will give you many different options for approaching different automation problems. The entire suits of tools result in a rich set of testing functions specially geared to the needs of testing of web application of all types.</div>
+		</aside>			</div>
+			<div class="col-md-4" id="footer-widget-2">
+				<aside id="ipt-kb-social-widget-2" class="widget ipt-kb-social-widget"><h3 class="widget-title">Stay <span>Connected</span></h3><ul class="ipt-kb-social-ul"><li class="facebook"><a href="index.html@p=49.html#" class="bstooltip" title="Like us on Facebook" data-toggle="tooltip"><i class="glyphicon ipt-icon-facebook"></i></a></li><li class="twitter"><a href="index.html@p=49.html#" class="bstooltip" title="Follow us on Twitter" data-toggle="tooltip"><i class="glyphicon ipt-icon-twitter"></i></a></li><li class="gplus"><a href="index.html@p=49.html#" class="bstooltip" title="Circle us on Google Plus" data-toggle="tooltip"><i class="glyphicon ipt-icon-google-plus"></i></a></li></ul></aside>			</div>
+		</div>
+	</div>
+		<div class="site-info">
+			<p class="copyright text-muted">
+				
+				
+				© ToolsQA - 2014 (FOUNDER - LAKSHAY SHARMA) by <a href="http://toolsqa.com/" rel="designer">ToolsQA</a>.<span class="sep"> | </span>
+<a href="http://oneiricindia.com/" target="_blank" rel="generator">Powered by Oneiric Tech Solutions Pvt. Ltd.</a>
+			</p>
+					</div><!-- .site-info -->
+		<div class="pieregWrapper" style="display:none;"><iframe id='CalendarControlIFrame' src='javascript:false;' frameBorder='0' scrolling='no'></iframe><div id='CalendarControl'></div></div><script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js@ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/localhost\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js@ver=4.5'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/accordion.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/position.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/menu.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/wp-a11y.min.js@ver=4.6.11'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No search results.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/autocomplete.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/button.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/datepicker.min.js@ver=1.11.4'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/resizable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/draggable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/dialog.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/droppable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/progressbar.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/selectable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/slider.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/spinner.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/sortable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/tabs.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/tooltip.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-blind.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-bounce.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-clip.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-drop.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-explode.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-fade.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-fold.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-highlight.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-pulsate.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-size.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-scale.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-shake.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-slide.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-transfer.min.js@ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://localhost/wp-admin/js/password-strength-meter.min.js?ver=4.6.11'></script>
+<script type='text/javascript' src='wp-content/themes/wp-knowledge-base/js/skip-link-focus-fix.js@ver=1.6.0'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min.js@ver=4.6.11'></script>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+</body>
+</html>

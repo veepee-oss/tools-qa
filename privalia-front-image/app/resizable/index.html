@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resizable | Demoqa</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://localhost/xmlrpc.php">
+
+        <script type="text/javascript">
+			var piereg_pass_str_meter_string = new Array(
+														 'Strength Indicator',
+														 'Very weak',
+														 'Weak',
+														 'Medium',
+														 'Strong',
+														 'Mismatch'
+														 );
+			var piereg_validation_engn = new Array(
+												 'none',
+												 '* This field is required',
+												 '* Please select an option',
+												 '* This checkbox is required',
+												 '* Both date range fields are required',
+												 '* Field must equal test',
+												 '* Invalid ',
+												 'Date Range',
+												 'Date Time Range',
+												 '* Minimum ',
+												 ' characters required',
+												 '* Maximum ',
+												 ' characters allowed',
+												 '* You must fill one of the following fields',
+												 '* Minimum value is ',
+												 '* Date prior to ',
+												 '* Date past ',
+												 ' options allowed',
+												 '* Please select ',
+												 ' options',
+												 '* Fields do not match',
+												 '* Invalid credit card number',
+												 '* Invalid phone number',
+												 '* Allowed Format (xxx) xxx-xxxx',
+												 '* Minimum 10 Digits starting with Country Code',
+												 '* Invalid email address',
+												 '* Not a valid integer',
+												 '* Invalid number',
+												 '* Invalid month',
+												 '* Invalid day',
+												 '* Invalid year',
+												 '* Invalid file extension',
+												 '* Invalid date, must be in YYYY-MM-DD format',
+												 '* Invalid IP address',
+												 '* Invalid URL',
+												 '* Numbers only',
+												 '* Letters only',
+												 '* No special characters allowed',
+												 '* This user is already taken',
+												 '* Validating, please wait',
+												 '* This username is available',
+												 '* This user is already taken',
+												 '* Validating, please wait',
+												 '* This name is already taken',
+												 '* This name is available',
+												 '* Validating, please wait',
+												 '* This name is already taken',
+												 '* Please input HELLO',
+												 '* Invalid Date',
+												 '* Invalid Date or Date Format',
+												 'Expected Format: ',
+												 'mm/dd/yyyy hh:mm:ss AM|PM or ',
+												 'yyyy-mm-dd hh:mm:ss AM|PM',
+												 '* Invalid Username',
+												 '* Invalid File',
+												 '* Maximum value is '
+												 );
+		</script>
+        		<script type="text/javascript">
+			var piereg_current_date		= '2018';
+			var piereg_startingDate		= '1950';
+			var piereg_endingDate		= '2014';
+        </script>
+        <link rel='dns-prefetch' href='http://ajax.googleapis.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Demoqa &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Demoqa &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Demoqa &raquo; Resizable Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.11"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/styles.css@ver=4.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-standard-css-css'  href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css?ver=4.6.11' type='text/css' media='all' />
+<link rel='stylesheet' id='pie_front_css-css'  href='../wp-content/plugins/pie-register/css/front.css@ver=2.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pie_validation_css-css'  href='../wp-content/plugins/pie-register/css/validation.css@ver=2.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-fonts-css'  href='http://fonts.googleapis.com/css?family=Oswald%7CRoboto%3A400%2C400italic%2C700%2C700italic&amp;ver=1.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-style-css'  href='../wp-content/themes/wp-knowledge-base/style.css@ver=1.6.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-bootstrap-css'  href='../wp-content/themes/wp-knowledge-base/lib/bootstrap/css/bootstrap.min.css@ver=1.6.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-bootstrap-theme-css'  href='../wp-content/themes/wp-knowledge-base/lib/bootstrap/css/bootstrap-theme.min.css@ver=1.6.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ipt_kb-icomoon-css'  href='../wp-content/themes/wp-knowledge-base/lib/icomoon/style.css@ver=1.6.0.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js@ver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js@ver=1.4.1'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='../wp-content/plugins/pie-register/js/piereg_validation.js@ver=2.0'></script>
+<script type='text/javascript' src='../wp-content/plugins/pie-register/js/CalendarControl.js@ver=2.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _zxcvbnSettings = {"src":"http:\/\/localhost\/wp-includes\/js\/zxcvbn.min.js"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-includes/js/zxcvbn-async.min.js@ver=1.0'></script>
+<script type='text/javascript' src='../wp-content/plugins/pie-register/js/datepicker.js@ver=2.0'></script>
+<script type='text/javascript' src='../wp-content/themes/wp-knowledge-base/lib/bootstrap/js/bootstrap.min.js@ver=1.6.0'></script>
+<script type='text/javascript' src='../wp-content/themes/wp-knowledge-base/lib/bootstrap/js/jquery.ipt-kb-bootstrap.js@ver=1.6.0'></script>
+<script type='text/javascript' src='../wp-content/themes/wp-knowledge-base/lib/sticky-kit/jquery.sticky-kit.min.js@ver=1.6.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var iptKBJS = {"ajaxurl":"http:\/\/localhost\/wp-admin\/admin-ajax.php","ajax_error":"Oops, some problem to connect. Try again?"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/wp-knowledge-base/js/ipt-kb.js@ver=1.6.0'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php@rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.11" />
+<link rel="canonical" href="../index.html@p=80.html" />
+<link rel='shortlink' href='../index.html@p=80.html' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed@url=http%253A%252F%252Flocalhost%252Fresizable%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed@url=http%253A%252F%252Flocalhost%252Fresizable%252F&amp;format=xml" />
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+
+ var $start_counter = $( "#event-start" ),
+$drag_counter = $( "#event-drag" ),
+$stop_counter = $( "#event-stop" ),
+counts = [ 0, 0, 0 ];
+$( "#dragevent" ).draggable({
+start: function() {
+counts[ 0 ]++;
+updateCounterStatus( $start_counter, counts[ 0 ] );
+},
+drag: function() {
+counts[ 1 ]++;
+updateCounterStatus( $drag_counter, counts[ 1 ] );
+},
+stop: function() {
+counts[ 2 ]++;
+updateCounterStatus( $stop_counter, counts[ 2 ] );
+}
+});
+function updateCounterStatus( $event_counter, new_count ) {
+// first update the status visually...
+if ( !$event_counter.hasClass( "ui-state-hover" ) ) {
+$event_counter.addClass( "ui-state-hover" )
+.siblings().removeClass( "ui-state-hover" );
+}
+// ...then update the numbers
+$( "span.count", $event_counter ).text( new_count );
+}
+
+
+var availableTags = [
+"ActionScript",
+"AppleScript",
+"Asp",
+"BASIC",
+"C",
+"C++",
+"Clojure",
+"COBOL",
+"ColdFusion",
+"Erlang",
+"Fortran",
+"Groovy",
+"Haskell",
+"Java",
+"JavaScript",
+"Lisp",
+"Perl",
+"PHP",
+"Python",
+"Ruby",
+"Scala",
+"Scheme"
+];
+$( "#tagss" ).autocomplete({
+source: availableTags
+});
+
+ function split( val ) {
+return val.split( /,\s*/ );
+}
+function extractLast( term ) {
+return split( term ).pop();
+}
+$( "#tagsss" )
+// don't navigate away from the field on tab when selecting an item
+.bind( "keydown", function( event ) {
+if ( event.keyCode === $.ui.keyCode.TAB &&
+$( this ).autocomplete( "instance" ).menu.active ) {
+event.preventDefault();
+}
+})
+.autocomplete({
+minLength: 0,
+source: function( request, response ) {
+// delegate back to autocomplete, but extract the last term
+response( $.ui.autocomplete.filter(
+availableTags, extractLast( request.term ) ) );
+},
+focus: function() {
+// prevent value inserted on focus
+return false;
+},
+select: function( event, ui ) {
+var terms = split( this.value );
+// remove the current input
+terms.pop();
+// add the selected item
+terms.push( ui.item.value );
+// add placeholder to get the comma-and-space at the end
+terms.push( "" );
+this.value = terms.join( ", " );
+return false;
+}
+});
+
+ $.widget( "custom.catcomplete", $.ui.autocomplete, {
+_create: function() {
+this._super();
+this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
+},
+_renderMenu: function( ul, items ) {
+var that = this,
+currentCategory = "";
+$.each( items, function( index, item ) {
+var li;
+if ( item.category != currentCategory ) {
+ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+currentCategory = item.category;
+}
+li = that._renderItemData( ul, item );
+if ( item.category ) {
+li.attr( "aria-label", item.category + " : " + item.label );
+}
+});
+}
+});
+
+ var data = [
+{ label: "anders", category: "" },
+{ label: "andreas", category: "" },
+{ label: "antal", category: "" },
+{ label: "annhhx10", category: "Products" },
+{ label: "annk K12", category: "Products" },
+{ label: "annttop C13", category: "Products" },
+{ label: "anders andersson", category: "People" },
+{ label: "andreas andersson", category: "People" },
+{ label: "andreas johnson", category: "People" }
+];
+$( "#searcha" ).catcomplete({
+delay: 0,
+source: data
+});
+
+ $( "#datepicker1" ).datepicker();
+
+ $( "#datepicker2" ).datepicker();
+$( "#anim" ).change(function() {
+$( "#datepicker2" ).datepicker( "option", "showAnim", $( this ).val() );
+});
+
+ $( "#datepicker3" ).datepicker({
+changeMonth: true,
+changeYear: true
+});
+
+ $( "#datepicker4" ).datepicker();
+$( "#format" ).change(function() {
+$( "#datepicker4" ).datepicker( "option", "dateFormat", $( this ).val() );
+});
+
+ $( "#slider-range-max" ).slider({
+range: "max",
+min: 1,
+max: 10,
+value: 2,
+slide: function( event, ui ) {
+$( "#amount1" ).val( ui.value );
+}
+});
+$( "#amount1" ).val( $( "#slider-range-max" ).slider( "value" ) );
+
+$( document ).tooltip();
+
+$( "#draggable" ).draggable();
+ $( "#tabs" ).tabs();
+ $( "#sliderview" ).slider();
+$( "#tabs222" ).tabs();
+$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+
+$( "#menu" ).menu();
+
+$( "#draggable1" ).draggable({ scroll: true });
+$( "#draggable2" ).draggable({ scroll: true, scrollSensitivity: 100 });
+$( "#draggable3" ).draggable({ scroll: true, scrollSpeed: 100 });
+
+$( "#draggabl" ).draggable({ axis: "y" });
+$( "#draggabl2" ).draggable({ axis: "x" });
+$( "#draggabl3" ).draggable({ containment: "#containment-wrapper", scroll: false });
+$( "#draggabl5" ).draggable({ containment: "parent" });
+
+$( "#drag" ).draggable({ cursor: "move", cursorAt: { top: 56, left: 56 } });
+$( "#drag2" ).draggable({ cursor: "crosshair", cursorAt: { top: -5, left: -5 } });
+$( "#drag3" ).draggable({ cursorAt: { bottom: 0 } });
+
+$( "#sortablebox" ).sortable({
+revert: true
+});
+
+$( "#draggablebox" ).draggable({
+connectToSortable: "#sortablebox",
+helper: "clone",
+revert: "invalid"
+});
+
+
+
+$( "#draggableview" ).draggable();
+$( "#droppableview" ).droppable({
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "p" )
+.html( "Dropped!" );
+}
+});
+
+$( "#draggableaccept, #draggable-nonvalid" ).draggable();
+$( "#droppableaccept" ).droppable({
+accept: "#draggableaccept",
+activeClass: "ui-state-hover",
+hoverClass: "ui-state-active",
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "p" )
+.html( "Dropped!" );
+}
+});
+
+$( "#draggableprop" ).draggable();
+$( "#droppableprop, #droppable-inner" ).droppable({
+activeClass: "ui-state-hover",
+hoverClass: "ui-state-active",
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "> p" )
+.html( "Dropped!" );
+return false;
+}
+});
+$( "#droppableprop2, #droppable2-inner" ).droppable({
+greedy: true,
+activeClass: "ui-state-hover",
+hoverClass: "ui-state-active",
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "> p" )
+.html( "Dropped!" );
+}
+});
+
+$( "#draggablerevert" ).draggable({ revert: "valid" });
+$( "#draggablerevert2" ).draggable({ revert: "invalid" });
+$( "#droppablerevert" ).droppable({
+activeClass: "ui-state-default",
+hoverClass: "ui-state-hover",
+drop: function( event, ui ) {
+$( this )
+.addClass( "ui-state-highlight" )
+.find( "p" )
+.html( "Dropped!" );
+}
+});
+
+$( "#catalog" ).accordion();
+$( "#catalog li" ).draggable({
+appendTo: "body",
+helper: "clone"
+});
+$( "#cart ol" ).droppable({
+activeClass: "ui-state-default",
+hoverClass: "ui-state-hover",
+accept: ":not(.ui-sortable-helper)",
+drop: function( event, ui ) {
+$( this ).find( ".placeholder" ).remove();
+$( "<li></li>" ).text( ui.draggable.text() ).appendTo( this );
+}
+}).sortable({
+items: "li:not(.placeholder)",
+sort: function() {
+// gets added unintentionally by droppable interacting with sortable
+// using connectWithSortable fixes this, but doesn't allow you to customize active/hoverClass options
+$( this ).removeClass( "ui-state-default" );
+}
+});
+
+$( "#resizable" ).resizable();
+
+$( "#resizableani" ).resizable({
+animate: true
+});
+
+ $( "#resizableconstrain" ).resizable({
+containment: "#container1"
+});
+
+ $( "#resizable_helper" ).resizable({
+helper: "ui-resizable-helper"
+});
+
+ $( "#resizable_max_min" ).resizable({
+maxHeight: 250,
+maxWidth: 350,
+minHeight: 150,
+minWidth: 200
+});
+
+ $( "#selectable" ).selectable();
+
+$( "#selectable_grid" ).selectable();
+
+
+ $( "#selectable-serialize" ).selectable({
+stop: function() {
+var result = $( "#select-result" ).empty();
+$( ".ui-selected", this ).each(function() {
+var index = $( "#selectable-serialize li" ).index( this );
+result.append( "#" + ( index + 1 ) );
+});
+}
+});
+
+ $( "#sortable" ).sortable();
+$( "#sortable" ).disableSelection();
+
+
+ $( "#sortable1, #sortable2" ).sortable({
+connectWith: ".connectedSortable"
+}).disableSelection();
+
+ $( "#sortable_grid" ).sortable();
+$( "#sortable_grid" ).disableSelection();
+
+ $( ".column" ).sortable({
+connectWith: ".column",
+handle: ".portlet-header",
+cancel: ".portlet-toggle",
+placeholder: "portlet-placeholder ui-corner-all"
+});
+$( ".portlet" )
+.addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
+.find( ".portlet-header" )
+.addClass( "ui-widget-header ui-corner-all" )
+.prepend( "<span class='ui-icon ui-icon-minusthick portlet-toggle'></span>");
+$( ".portlet-toggle" ).click(function() {
+var icon = $( this );
+icon.toggleClass( "ui-icon-minusthick ui-icon-plusthick" );
+icon.closest( ".portlet" ).find( ".portlet-content" ).toggle();
+});
+
+$( "#accordion" ).accordion();
+
+ var icons = {
+header: "ui-icon-circle-arrow-e",
+activeHeader: "ui-icon-circle-arrow-s"
+};
+$( "#accordion_icons" ).accordion({
+icons: icons
+});
+$( "#toggle" ).button().click(function() {
+if ( $( "#accordion_icons" ).accordion( "option", "icons" ) ) {
+$( "#accordion_icons" ).accordion( "option", "icons", null );
+} else {
+$( "#accordion_icons" ).accordion( "option", "icons", icons );
+}
+});
+
+ $( "#accordion_fill" ).accordion({
+heightStyle: "fill"
+});
+});
+
+
+ $( "#accordion-sort" )
+.ui-accordion({
+header: "> div > h3"
+})
+.sortable({
+axis: "y",
+handle: "h3",
+stop: function( event, ui ) {
+ui.item.children( "h3" ).triggerHandler( "focusout" );
+$( this ).ui-accordion( "refresh" );
+}
+});
+
+ $(function() {
+$( "#accordion-resizer" ).resizable({
+minHeight: 140,
+minWidth: 200,
+resize: function() {
+$( "#accordion_fill" ).accordion( "refresh" );
+}
+});
+
+ 
+});
+</script>
+		<script type="text/javascript">
+			var ajaxurl 				= 'http://localhost/wp-admin/admin-ajax.php';
+        </script>
+        <script>
+  $(document).ready(function() {
+      $( "#accordionsort" )
+.accordion({
+header: "> div > h3"
+})
+.sortable({
+axis: "y",
+handle: "h3",
+stop: function( event, ui ) {
+
+ui.item.children( "h3" ).triggerHandler( "focusout" );
+
+$( this ).accordion( "refresh" );
+}
+});    
+});
+
+</script>
+</head>
+
+<body class="page page-id-80 page-template-default">
+<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+		<nav class="navbar navbar-default navbar-static-top main-navigation" role="navigation" id="site_navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+										<a class="site-anchor" href="../index.html">
+						<img src="../wp-content/uploads/2014/08/Tools-QA-213.png" width="275" height="100" alt="">
+					</a>
+					
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul id="menu-primary-menu" class="nav navbar-nav"><li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a title="Home" href="../index.html">Home</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a title="About us" href="../index.html@p=156.html">About us</a></li>
+<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a title="Services" href="../index.html@p=114.html">Services</a></li>
+<li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66 dropdown"><a title="Demo" href="../index.html@p=80.html#" data-toggle="dropdown" class="dropdown-toggle">Demo <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a title="Draggable" href="../index.html@p=22.html">Draggable</a></li>
+	<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a title="Tabs" href="../index.html@p=82.html">Tabs</a></li>
+</ul>
+</li>
+<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a title="Blog" href="../blog/index.html">Blog</a></li>
+<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a title="Contact" href="../index.html@p=28.html">Contact</a></li>
+</ul>				</div>
+			</div>
+		</nav>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109033876-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109033876-1');
+</script>
+
+
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content container">
+
+	<ol id="breadcrumbs" class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
+		<li typeof="v:Breadcrumb">
+		<a rel="v:url" property="v:title" href="../index.html">Home</a>
+	</li>
+	
+							<li typeof="v:Breadcrumb" class="active">
+			<span property="v:title">Resizable</span>
+		</li>
+		</ol>
+
+	<div id="primary" class="content-area col-md-8">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-80" class="post-80 page type-page status-publish hentry">
+	<header class="entry-header page-header">
+		<h1 class="entry-title">Resizable</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<h2>Change the size of an element using the mouse.</h2>
+<div id="tabs">
+<ul>
+<li><a href="../index.html@p=80.html#tabs-1">Default functionality</a></li>
+<li><a href="../index.html@p=80.html#tabs-2">Animate</a></li>
+<li><a href="../index.html@p=80.html#tabs-3">Constrain resize area</a></li>
+<li><a href="../index.html@p=80.html#tabs-4">Helper</a></li>
+<li><a href="../index.html@p=80.html#tabs-5">Max/Min size</a></li>
+</ul>
+<div id="tabs-1">
+<div class="inside_contain">
+<div id="resizable" class="ui-widget-content">
+<h3 class="ui-widget-header">Resizable</h3>
+</div>
+</div>
+</div>
+<div id="tabs-2">
+<div class="inside_contain">
+<div id="resizableani" class="ui-widget-content">
+<h3 class="ui-widget-header">Animate</h3>
+</div>
+</div>
+</div>
+<div id="tabs-3">
+<div class="inside_contain">
+<div id="container1" class="ui-widget-content">
+<h3 class="ui-widget-header">Containment</h3>
+<div id="resizableconstrain" class="ui-state-active">
+<h3 class="ui-widget-header">Resizable</h3>
+</div>
+</div>
+</div>
+</div>
+<div id="tabs-4">
+<div class="inside_contain">
+<div id="resizable_helper" class="ui-widget-content">
+<h3 class="ui-widget-header">Helper</h3>
+</div>
+</div>
+</div>
+<div id="tabs-5">
+<div class="inside_contain">
+<div id="resizable_max_min" class="ui-widget-content">
+<h3 class="ui-widget-header">Resize larger / smaller</h3>
+</div>
+</div>
+</div>
+</div>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+	<div id="secondary" class="widget-area col-md-4" role="complementary">
+						<aside id="nav_menu-6" class="widget widget_nav_menu panel panel-default"><div class="panel-heading"><h3 class="widget-title panel-title">Registration</h3></div><div class="panel-body"><div class="menu-registration-container"><ul id="menu-registration" class="menu"><li id="menu-item-374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374"><a href="../index.html@p=49.html">Registration</a></li>
+</ul></div></div></aside><aside id="nav_menu-3" class="widget widget_nav_menu panel panel-default"><div class="panel-heading"><h3 class="widget-title panel-title">interaction</h3></div><div class="panel-body"><div class="menu-interactions-container"><ul id="menu-interactions" class="menu"><li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="../index.html@p=22.html">Draggable</a></li>
+<li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"><a href="../index.html@p=19.html">Droppable</a></li>
+<li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-80 current_page_item menu-item-143"><a href="../index.html@p=80.html">Resizable</a></li>
+<li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"><a href="../index.html@p=41.html">Selectable</a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a href="../index.html@p=149.html">Sortable</a></li>
+</ul></div></div></aside><aside id="nav_menu-2" class="widget widget_nav_menu panel panel-default"><div class="panel-heading"><h3 class="widget-title panel-title">Widget</h3></div><div class="panel-body"><div class="menu-widget-container"><ul id="menu-widget" class="menu"><li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="../index.html@p=40.html">Accordion</a></li>
+<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="../index.html@p=36.html">Autocomplete</a></li>
+<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="../index.html@p=24.html">Datepicker</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="../index.html@p=43.html">Menu</a></li>
+<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="../index.html@p=76.html">Slider</a></li>
+<li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="../index.html@p=82.html">Tabs</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="../index.html@p=84.html">Tooltip</a></li>
+</ul></div></div></aside><aside id="nav_menu-4" class="widget widget_nav_menu panel panel-default"><div class="panel-heading"><h3 class="widget-title panel-title">Frames and Windows</h3></div><div class="panel-body"><div class="menu-frames-and-windows-container"><ul id="menu-frames-and-windows" class="menu"><li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="../index.html@p=11.html">Frames and windows</a></li>
+</ul></div></div></aside>			</div><!-- #secondary -->
+
+	</div><!-- #content -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8" id="footer-widget-1">
+				<aside id="text-2" class="widget widget_text"><h3 class="widget-title">About Us</h3>			<div class="textwidget">Selenium is a software testing framework for the web that facilitates the automation of browsers. The Selenium project produces various tools for automation testing such as Selenium IDE, Selenium Remote Control (RC), Selenium Grid and Selenium 2.0 & WebDriver. Learning all the tools will give you many different options for approaching different automation problems. The entire suits of tools result in a rich set of testing functions specially geared to the needs of testing of web application of all types.</div>
+		</aside>			</div>
+			<div class="col-md-4" id="footer-widget-2">
+				<aside id="ipt-kb-social-widget-2" class="widget ipt-kb-social-widget"><h3 class="widget-title">Stay <span>Connected</span></h3><ul class="ipt-kb-social-ul"><li class="facebook"><a href="../index.html@p=80.html#" class="bstooltip" title="Like us on Facebook" data-toggle="tooltip"><i class="glyphicon ipt-icon-facebook"></i></a></li><li class="twitter"><a href="../index.html@p=80.html#" class="bstooltip" title="Follow us on Twitter" data-toggle="tooltip"><i class="glyphicon ipt-icon-twitter"></i></a></li><li class="gplus"><a href="../index.html@p=80.html#" class="bstooltip" title="Circle us on Google Plus" data-toggle="tooltip"><i class="glyphicon ipt-icon-google-plus"></i></a></li></ul></aside>			</div>
+		</div>
+	</div>
+		<div class="site-info">
+			<p class="copyright text-muted">
+				
+				
+				© ToolsQA - 2014 (FOUNDER - LAKSHAY SHARMA) by <a href="http://toolsqa.com/" rel="designer">ToolsQA</a>.<span class="sep"> | </span>
+<a href="http://oneiricindia.com/" target="_blank" rel="generator">Powered by Oneiric Tech Solutions Pvt. Ltd.</a>
+			</p>
+					</div><!-- .site-info -->
+		<div class="pieregWrapper" style="display:none;"><iframe id='CalendarControlIFrame' src='javascript:false;' frameBorder='0' scrolling='no'></iframe><div id='CalendarControl'></div></div><script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js@ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/localhost\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts.js@ver=4.5'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/widget.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/accordion.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/position.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/menu.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-a11y.min.js@ver=4.6.11'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No search results.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/autocomplete.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/button.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/datepicker.min.js@ver=1.11.4'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/mouse.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/resizable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/draggable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/dialog.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/droppable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/progressbar.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/selectable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/slider.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/spinner.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/sortable.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/tabs.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/tooltip.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-blind.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-bounce.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-clip.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-drop.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-explode.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-fade.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-fold.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-highlight.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-pulsate.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-size.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-scale.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-shake.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-slide.min.js@ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/effect-transfer.min.js@ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://localhost/wp-admin/js/password-strength-meter.min.js?ver=4.6.11'></script>
+<script type='text/javascript' src='../wp-content/themes/wp-knowledge-base/js/skip-link-focus-fix.js@ver=1.6.0'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply.min.js@ver=4.6.11'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js@ver=4.6.11'></script>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+</body>
+</html>
