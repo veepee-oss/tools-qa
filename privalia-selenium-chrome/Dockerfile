@@ -6,7 +6,8 @@ USER root
 #============================================
 # Google Chrome
 #============================================
-COPY google-chrome-stable_63.0.3239.84-1_amd64.deb /tmp/google-chrome-stable.deb
+ARG CHROME_VERSION="64.0.3282.140"
+COPY chrome64_64.0.3282.140.deb /tmp/google-chrome-stable.deb
 RUN apt-get update -qqy \
   && apt-get -qqy install \
   fonts-liberation \
@@ -80,7 +81,7 @@ USER seluser
 # can specify versions by CHROME_DRIVER_VERSION
 # Latest released version will be used by default
 #============================================
-ARG CHROME_DRIVER_VERSION="2.33"
+ARG CHROME_DRIVER_VERSION="2.35"
 RUN CD_VERSION=$(if [ ${CHROME_DRIVER_VERSION:-latest} = "latest" ]; then echo $(wget -qO- https://chromedriver.storage.googleapis.com/LATEST_RELEASE); else echo $CHROME_DRIVER_VERSION; fi) \
   && echo "Using chromedriver version: "$CD_VERSION \
   && wget --no-verbose -O /tmp/chromedriver_linux64.zip https://chromedriver.storage.googleapis.com/$CD_VERSION/chromedriver_linux64.zip \
