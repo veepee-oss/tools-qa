@@ -53,6 +53,9 @@ $ vncviewer localhost:5900
  (when prompted for a password, just type: "secret"). You can also install a graphical tool such as remote
  desktop client and proceed much like in OSX
 
+
+## Stopping services
+
  To terminate all services just execute in the terminal (in the same folder where this file is located)
 
 ```sh
