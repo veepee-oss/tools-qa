@@ -56,5 +56,5 @@ $ vncviewer localhost:5900
  To terminate all services just execute in the terminal (in the same folder where this file is located)
 
 ```sh
- $ selenium-grid-nodes-compose.yml down
+ $ docker-compose -f selenium-grid-nodes-compose.yml down
 ```
