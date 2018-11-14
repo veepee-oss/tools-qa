@@ -3,7 +3,7 @@ Privalia QA Worker Image
 
 * Alpine linux
 * Java JDK 8
-* Maven 3.5.2
+* Maven 3.5.4
 * Includes vin, openssh-client, iputils
 
 ## How to build it?
