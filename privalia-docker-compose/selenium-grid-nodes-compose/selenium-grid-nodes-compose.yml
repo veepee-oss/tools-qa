@@ -14,8 +14,6 @@ services:
       SELENIUM_GRID: 'selenium-grid:4444'
     ports:
       - "5900:5900"
-    volumes:
-      - $PWD:/home
   selenium-firefox:
     image: 'harbor.privalia-test.com/qa/privalia-selenium-firefox:60'
     depends_on:
@@ -25,5 +23,3 @@ services:
       SELENIUM_GRID: 'selenium-grid:4444'
     ports:
       - "5901:5900"
-    volumes:
-      - $PWD:/home
