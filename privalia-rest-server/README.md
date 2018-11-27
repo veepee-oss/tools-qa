@@ -3,7 +3,7 @@ Privalia Rest-Server Image
 
 * Based on Debian Jessie
 * NodeJS 9.11.1
-* json-server as mock server
+* json-server as mock server (0.14.0)
 
 ## How to build it?
 
