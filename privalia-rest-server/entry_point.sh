@@ -1,3 +1,3 @@
 #!/bin/bash
 
-json-server /opt/bin/db.json -p 3000
+json-server --watch /opt/bin/db.json --host 0.0.0.0

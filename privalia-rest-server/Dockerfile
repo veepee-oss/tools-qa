@@ -4,7 +4,7 @@ MAINTAINER Privalia QA Team
 #============================================
 # Install server using NPM
 #============================================
-RUN npm install -g json-server
+RUN npm install -g json-server@0.14.0
 
 
 #============================================
