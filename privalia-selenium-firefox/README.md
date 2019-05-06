@@ -12,7 +12,7 @@ Privalia Selenium-Firefox Image
 ## How to build it?
 
 ``` bash
-$ git clone git@gitlab.privalia.pin:qa-automation/tools-qa.git
+$ git clone git@github.com:PrivaliaTech/tools-qa.git
 $ cd tools-qa
 $ cd docker-selenium-firefox
 $ docker build -t privalia-selenium-firefox:60 . 
@@ -21,13 +21,13 @@ $ docker build -t privalia-selenium-firefox:60 .
 ## How to run it?
 
 ``` bash
-$ docker run -d -P --name mybrowser -e ID=mybrowser -e SELENIUM_GRID=<hub-address>:<hub-port> --dns <dns-address> privalia-selenium-firefox:60
+$ docker run -d -P --name mybrowser -e ID=mybrowser -e SELENIUM_GRID=<hub-address>:<hub-port> --dns <dns-address> privaliatech/privalia-selenium-firefox:60
 ```
 
 ## How to extend it?
 
 In your Dockerfile include the next line
-```FROM privalia-selenium-firefox:60```
+```FROM privaliatech/privalia-selenium-firefox:60```
 
 ## Enviroment Variables
 
