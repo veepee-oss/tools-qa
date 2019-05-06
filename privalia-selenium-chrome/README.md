@@ -12,7 +12,7 @@ Privalia Selenium-Chrome Image
 ## How to build it?
 
 ``` bash
-$ git clone git@gitlab.privalia.pin:qa-automation/tools-qa.git
+$ git clone git@github.com:PrivaliaTech/tools-qa.git
 $ cd tools-qa
 $ cd docker-selenium-chrome
 $ docker build -t privalia-selenium-chrome:64 . 
@@ -21,13 +21,13 @@ $ docker build -t privalia-selenium-chrome:64 .
 ## How to run it?
 
 ``` bash
-$ docker run -d -P --name mybrowser -e ID=mybrowser -e SELENIUM_GRID=<hub-address>:<hub-port> --dns <dns-address> privalia-selenium-chrome:62
+$ docker run -d -P --name mybrowser -e ID=mybrowser -e SELENIUM_GRID=<hub-address>:<hub-port> --dns <dns-address> privaliatech/privalia-selenium-chrome:62
 ```
 
 ## How to extend it?
 
 In your Dockerfile include the next line
-```FROM privalia-selenium-chrome:62```
+```FROM privaliatech/privalia-selenium-chrome:62```
 
 ## Enviroment Variables
 
