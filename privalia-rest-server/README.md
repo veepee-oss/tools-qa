@@ -8,7 +8,7 @@ Privalia Rest-Server Image
 ## How to build it?
 
 ``` bash
-$ git clone git@gitlab.privalia.pin:qa-automation/tools-qa.git
+$ git clone git@github.com:PrivaliaTech/tools-qa.git
 $ cd tools-qa
 $ cd privalia-rest-server
 $ docker build -t privalia-rest-server:0.1.0 . 
@@ -17,14 +17,14 @@ $ docker build -t privalia-rest-server:0.1.0 .
 ## How to run it?
 
 ``` bash
-$ docker run -d -p 3000:3000 --name rest-server privalia-rest-server:0.1.0
+$ docker run -d -p 3000:3000 --name rest-server privaliatech/privalia-rest-server:0.1.0
 ```
 Now the server should be available in localhost:3000
 
 ## How to extend it?
 
 In your Dockerfile include the next line
-```FROM privalia-rest-server:0.1.0```
+```FROM privaliatech/privalia-rest-server:0.1.0```
 
 ## Description
 
