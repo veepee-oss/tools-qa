@@ -27,5 +27,5 @@ In your Dockerfile include the next line
 
 ## Description
 
-This images starts an static web page that can be used to run tests related to selenium in the bdt-lib library. It is used to tests the implementation of selenium in the cucumber steps, it does not contain client-specific login.
+This images starts an static web page that can be used to run tests related to selenium in the gingerspec library. It is used to tests the implementation of selenium in the cucumber steps, it does not contain client-specific login.
 This web page is based on the live site http://demoqa.com/
