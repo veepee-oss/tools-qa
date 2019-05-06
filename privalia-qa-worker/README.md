@@ -28,25 +28,11 @@ Then, you can map this new volume to the .m2 directory of the container using -v
 
 ## How to run it?
 
-First, do a mvn install on the parent-pom project to load al required dependencies on the maven repo. To do this, go to the project folder (where the pom.xml file is located) and execute
-
-``` bash
-cd .../parent-pom
-$ docker run -it --rm -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privalia-qa-worker:0.1.0 mvn clean install
-```
-
-Do the same with the bdt-lib project: Go to the project directory and execute
-
-``` bash
-cd .../bdt-lib
-docker run -it --rm -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privalia-qa-worker:0.1.0 mvn clean install -Dmaven.test.skip=true
-```
-
-At this point, all required dependencies should be available in the repository, you can go to your project folder and execute your tests:
+You can go to your project folder and execute your tests:
 
 ``` bash
 cd .../pilot-project
-docker run -it --rm --name SeleniumPoolingIT --dns 172.16.214.1 --dns 172.16.214.2 -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privalia-qa-worker:0.1.0 mvn verify -Dit.test=com.privalia.bo.po.SeleniumPoolingIT.java -DSELENIUM_GRID=172.17.0.1:4444 -DlogLevel=DEBUG
+docker run -it --rm --name SeleniumPoolingIT --dns 172.16.214.1 --dns 172.16.214.2 -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privaliatech/privalia-qa-worker:0.1.0 mvn verify -Dit.test=com.privalia.bo.po.SeleniumPoolingIT.java -DSELENIUM_GRID=172.17.0.1:4444 -DlogLevel=DEBUG
 ```
 
 Change the test name or other variables (like the address of the selenium grid or the loggin level) according to your needs.
@@ -55,7 +41,7 @@ The container is designed to stop and delete itself once the execution of the ma
 
 ``` bash
 cd .../pilot-project
-docker run -it --rm -e KEEP_ALIVE=1 --name SeleniumPoolingIT --dns 172.16.214.1 --dns 172.16.214.2 -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privalia-qa-worker:0.1.0 mvn verify -Dit.test=com.privalia.bo.po.SeleniumPoolingIT.java -DSELENIUM_GRID=172.17.0.1:4444 -DlogLevel=DEBUG
+docker run -it --rm -e KEEP_ALIVE=1 --name SeleniumPoolingIT --dns 172.16.214.1 --dns 172.16.214.2 -v maven-repo:/root/.m2 -v $(pwd):/usr/src/mymaven --workdir /usr/src/mymaven privaliatech/privalia-qa-worker:0.1.0 mvn verify -Dit.test=com.privalia.bo.po.SeleniumPoolingIT.java -DSELENIUM_GRID=172.17.0.1:4444 -DlogLevel=DEBUG
 ```
 
 KEEP_ALIVE= If 1, keeps the container alive after the maven command finish its execution. If not specified, defaults to 0
