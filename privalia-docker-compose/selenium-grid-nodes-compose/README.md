@@ -13,7 +13,7 @@
 Clone the repo (or just download the YAML file) and execute a docker-compose up on the *.yml file
 
 ```sh
-$ git clone git@gitlab.privalia.pin:qa-automation/tools-qa.git
+$ git clone git@github.com:PrivaliaTech/tools-qa.git
 $ cd tools-qa/privalia-docker-compose/selenium-grid-nodes-compose
 $ docker-compose -f selenium-grid-nodes-compose.yml up -d
 ```
