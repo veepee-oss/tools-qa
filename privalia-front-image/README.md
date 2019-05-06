@@ -16,14 +16,14 @@ $ docker build -t privalia-front-image:0.1.0 .
 ## How to run it?
 
 ``` bash
-$ docker run -d -p 80:80 --name demoqa privalia-front-image:0.1.0
+$ docker run -d -p 80:80 --name demoqa privaliatech/privalia-front-image:0.1.0
 ```
 Now the server should be available in localhost:80
 
 ## How to extend it?
 
 In your Dockerfile include the next line
-```FROM privalia-front-image:0.1.0```
+```FROM privaliatech/privalia-front-image:0.1.0```
 
 ## Description
 
