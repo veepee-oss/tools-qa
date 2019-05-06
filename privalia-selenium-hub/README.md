@@ -10,7 +10,7 @@ The Hub receives a test to be executed along with information on which browser a
 
 Download and build the image
 ``` bash
-$ git clone git@gitlab.privalia.pin:qa-automation/tools-qa.git
+$ git clone git@github.com:PrivaliaTech/tools-qa.git
 $ cd tools-qa
 $ cd privalia-selenium-hub
 $ docker build -t privalia-selenium-hub:3.9.1 .
@@ -18,10 +18,10 @@ $ docker build -t privalia-selenium-hub:3.9.1 .
 
 Run the container
 ```
-$ docker run -d -p 4444:4444 --name selenium-hub privalia-selenium-hub:3.9.1
+$ docker run -d -p 4444:4444 --name selenium-hub privaliatech/privalia-selenium-hub
 ```
 
 Note: You can optionally override default configuration settings using environment variables.
 
 ```
-$ docker run -d -P --name selenium-hub -e GRID_TIMEOUT=10 privalia-selenium-hub:3.9.1
+$ docker run -d -P --name selenium-hub -e GRID_TIMEOUT=10 privaliatech/privalia-selenium-hub
